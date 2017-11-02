@@ -5,9 +5,8 @@ function formatWords(words){
   }
   for (let i=0; i < words.length; i++) {
     if (words[i].length === 0) {
-      console.log(i);
-      console.log(words[i]);
       words.splice(i, 1);
+      i--;
     }
   }
   for (let i=0; i < words.length; i++) {
